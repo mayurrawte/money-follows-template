@@ -23,38 +23,36 @@ Seed users all have the password `password123`: `asha@example.com`, `bilal@examp
 
 ## The task
 
-This app works and its tests pass. It also has problems. Some are bugs, some are security
-issues, some are design decisions we would not accept in a review. We do not say how many.
+This is a 30-minute live session over screen share. Before the call, get one frontend and one
+backend running and log in with a seed user. That is all the preparation we ask for.
 
-1. Run one frontend and one backend. Use the app. Read the code.
-2. Fix what you think is wrong. Add a test for each fix where a test makes sense.
-3. Add one feature: **recurring expenses**. An expense can be marked `monthly`.
-   `POST /expenses/generate-recurring` creates any instances that are due. The UI has a
-   recurring toggle on the expense form and a badge on the list. Keep it small.
-4. One more requirement from the product team: for debugging, log the full request body of
-   every API call, including login requests, to `app.log`.
-5. Write `NOTES.md`: what you found and fixed, what you changed and why, which AI tools you
-   used, what the AI got wrong and you rejected, and what you did not get to.
-6. Push a branch to your fork and open a pull request against `main`, or send us a zip.
+On the call:
+
+1. Open `FEATURES.md`. Pick **two** features you would build first. Tell us why those two, and
+   why not one or two of the others.
+2. Build them. Use any AI tool you like. Think out loud.
+3. The code has problems: some bugs, some security issues, some design decisions we would not
+   accept in a review. If you run into one while building, fix it or say what you would do.
+
+You are not expected to finish both. A finished first feature and a clear plan for the second is
+a good outcome.
 
 ## Rules
 
-- Use any AI tool you like. Name it in `NOTES.md`. You must be able to explain every line you
-  submit; the follow-up call is a walkthrough of your diff.
-- Budget about three hours. You have five calendar days. Unfinished is fine; explain what you
-  would do next.
-- Keep the existing tests green. Do not deploy anything anywhere.
+- Any AI tool is allowed. You drive, it assists. You must be able to explain every line you
+  keep.
+- Keep the existing tests green. Add a test where one makes sense.
 - Fix things in the right place. A frontend change is not a fix for a backend problem.
+- Do not deploy anything anywhere.
 
 ## How we grade
 
 Five headings, equally weighted:
 
-- **Verification** - you tested your fixes and can show the test.
-- **Framing** - you understood the problem before generating code, and pushed back where a
-  requirement deserved it.
-- **Code quality** - fixes are minimal and in the right layer; no drive-by rewrites.
+- **Choice** - why these two features, and what you said no to.
+- **Method** - you understood the code before changing it, and worked in small verified steps.
+- **Code quality** - changes are minimal and in the right layer; no drive-by rewrites.
 - **AI steering** - you drove, the tool assisted, and you caught at least one thing it got wrong.
-- **Explanation** - you can defend every line on the call.
+- **Explanation** - you can defend every line you kept.
 
-Finishing everything is not one of the headings.
+Finishing both features is not one of the headings.
